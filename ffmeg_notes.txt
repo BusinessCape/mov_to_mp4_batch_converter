@@ -1,0 +1,12 @@
+works:
+   ffmpeg -i DSC_5741.MOV -s 1920x1080 -f mp4 -vcodec mpeg4 -acodec mp3 finanecape.mp4
+
+
+ffmpeg -i DSC_5741.MOV -s 1920x1080 -f mp4 -vcodec mpeg4 -acodec mp3 -ac 1 -ar 16000 -r 13 -ab 32000 finanecape.mp4
+
+
+
+good:
+   ffmpeg -i DSC_5741.MOV -q:a 0 -q:v 0 -strict -2 finanecape.mp4
+
+
